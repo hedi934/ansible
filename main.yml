@@ -2,5 +2,5 @@
   tasks:
   - name: ansible create directory example
     file:
-      path: /tmp/devops_directory
+      path: /home/azureuser/hedi
       state: directory
