@@ -14,8 +14,8 @@
   
     - name: fetsh package
       fetch:
-        src: /home/azureuser/fyc/livraison-1.2.0
-        dest: /home/azureuser/fyc/hedu
+        src: /home/azureuser
+        dest: /home/azureuser/fyc/hedi
         mode: 0755
         owner: azureuser
         group: root
