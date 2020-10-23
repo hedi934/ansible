@@ -13,17 +13,10 @@
       force_basic_auth: yes
   
  - name: fetsh package
-   get_url:
+   fetch:
       src: /home/azureuser/fyc/livraison-1.2.0
-      dest: /home/azureuser/fyc
+      dest: /home/azureuser/fyc/"{{ ansible_date_time.date}}"
       mode: 0755
       owner: azureuser
       group: root
       
- - name: ansible create directory example
-   get_url:
-      src: /home/azureuser/fyc/livraison-1.2.0
-      dest: /home/azureuser/fyc
-      mode: 0755
-      owner: azureuser
-      group: root
