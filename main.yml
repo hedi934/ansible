@@ -8,7 +8,7 @@
     - name: download package
       get_url:
         url: http://20.188.42.94:8081/repository/maven-releases/org/fyc/weather-jar/1.2.0/weather-jar-1.2.0.jar
-        dest: /repository/maven-releases/livraison-1.2.0
+        dest: /home/azureuser
         mode: 0755
         force_basic_auth: yes
   
