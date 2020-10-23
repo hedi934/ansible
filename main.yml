@@ -12,8 +12,8 @@
         mode: 0755
         force_basic_auth: yes
   
-   - name: fetsh package
-     fetch:
+    - name: fetsh package
+      fetch:
         src: /home/azureuser/fyc/livraison-1.2.0
         dest: /home/azureuser/fyc/"{{ ansible_date_time.date}}"
         mode: 0755
