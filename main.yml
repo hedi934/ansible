@@ -2,12 +2,17 @@
   tasks:
     - name: ansible create directory example
       file:
-        path: /home/azureuser/fyc/hedi
+        path: /home/azureuser/calculator-jar
         state: directory
  
     - name: download package
       get_url:
-        url: http://20.188.42.94:8081/repository/maven-releases/org/fyc/weather-jar/1.2.0/weather-jar-1.2.0.jar
-        dest: /home/azureuser/fyc/hedi
+        url: http://20.188.42.94:8081/repository/maven-releases/org/fyc/calculator-jar/1.0.0/calculator-jar-1.0.0.jar
+        dest: /home/azureuser/calculator-jar
         mode: 0755
         force_basic_auth: yes
+        
+    - name: download package
+      raw: java -jar /home/azureuser/calculator-jar/calculator-jar-1.0.0.jar
+        
+      
