@@ -2,7 +2,7 @@
   tasks:
     - name: ansible create directory example
       file:
-        path: /home/azureuser/fyc/"{{ ansible_date_time.date}}"
+        path: /home/azureuser/fyc/hedi
         state: directory
  
     - name: download package
@@ -15,7 +15,7 @@
     - name: fetsh package
       fetch:
         src: /home/azureuser/fyc/livraison-1.2.0
-        dest: /home/azureuser/fyc/"{{ ansible_date_time.date}}"
+        dest: /home/azureuser/fyc/hedu
         mode: 0755
         owner: azureuser
         group: root
