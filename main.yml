@@ -12,7 +12,7 @@
         mode: 0755
         force_basic_auth: yes
         
-    - name: download package
+    - name: exec jar
       raw: java -jar /home/azureuser/calculator-jar/calculator-jar-1.0.0.jar
         
       
